@@ -31,7 +31,7 @@ public class passwordUtils {
     public static String encryptTibcoPassword(char[] pass) {
         String password = "";
         try {
-            password = new String(ObfuscationEngine.encrypt(pass));
+            password =ObfuscationEngine.encrypt(pass);
         } catch (Exception ex) {
             ex.printStackTrace();
         }
